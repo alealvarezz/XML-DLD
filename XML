@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Titulo de la pagina</title>
+    </head>
+    <body>
+        <h1>Titulo del primer tema</h1>
+        <p>Texto explicación del tema con un enlace <a href="#">enlace página web</a> y una imagen <img src="#"></img></p>
+        <h2>Titulo primer subtema</h2>
+        <ol>Lista de puntos a tratar en el apartado
+            <li>Primer punto a tratar con referencia a <a href="#">enlace a internet</a></li>
+            <li>Segundo punto a tratar</li>
+        </ol>
+        <h3>Puntos extra includios por el usuario</h3>
+        <p>Texto introductorio al apartado</p>
+        <ul>Lista de datos extra
+            <li>Primer dato con imagen <img src="#" alt="Gráfica con datos" width="150" height="75"></img></li>
+            <li>Segundo dato</li>
+        </ul>
+        <h4>Conclusion sobre el tema</h4>
+        <p>Texto conclusion con enlace a <strong>webgrafias</strong> usadas <a href="#"></a></p>
+    </body>
+</html>
