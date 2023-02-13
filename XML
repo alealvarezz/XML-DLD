@@ -1,3 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE  html [
+<!ELEMENT html ( head, body ) >
+
+<!ELEMENT head ( title ) >
+<!ELEMENT title ( #PCDATA ) >
+
+<!ELEMENT body ( h1 | p | h2 | ol | li | a | img | h4 | h3 | ul | strong | br | hr )* >
+<!ELEMENT h1 ( #PCDATA | img | a )* >
+<!ELEMENT h2 ( #PCDATA | a | img )* >
+<!ELEMENT h3 ( #PCDATA | a | img )* >
+<!ELEMENT h4 ( #PCDATA | a | img )* >
+<!ELEMENT br ( #PCDATA ) >
+<!ELEMENT hr ( #PCDATA ) >
+<!ELEMENT p ( #PCDATA | a | img | hr | br | strong |ol | ul | li )* >
+<!ELEMENT ul ( #PCDATA | li )* >
+<!ELEMENT ol ( #PCDATA | li )* >
+<!ELEMENT li ( #PCDATA | a | img )* >
+<!ELEMENT a ( #PCDATA ) >
+<!ATTLIST a href CDATA #REQUIRED >
+<!ELEMENT img ( #PCDATA ) >
+<!ATTLIST img src CDATA #REQUIRED 
+              alt CDATA #IMPLIED 
+              width CDATA #IMPLIED 
+              height CDATA #IMPLIED >
+              
+<!ELEMENT strong ( #PCDATA ) >
+]>
+
 <html>
     <head>
         <title>Titulo de la pagina</title>
@@ -11,12 +41,12 @@
             <li>Segundo punto a tratar</li>
         </ol>
         <h3>Puntos extra includios por el usuario</h3>
-        <p>Texto introductorio al apartado</p>
+        <p>Texto introductorio <br/> al apartado</p>
         <ul>Lista de datos extra
             <li>Primer dato con imagen <img src="#" alt="Gráfica con datos" width="150" height="75"></img></li>
             <li>Segundo dato</li>
         </ul>
         <h4>Conclusion sobre el tema</h4>
-        <p>Texto conclusion con enlace a <strong>webgrafias</strong> usadas <a href="#"></a></p>
+        <p>Texto conclusion <hr/> con enlace a <strong>webgrafias</strong> usadas <a href="#"></a></p>
     </body>
 </html>
